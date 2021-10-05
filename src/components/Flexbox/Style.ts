@@ -9,6 +9,9 @@ export const Container = styled.div`
   height: 100vh;
   background-color: #a020f0;
 
+  //start
+  display: flex;
+ 
   header {
     height: 150px;
     width: 100%;
