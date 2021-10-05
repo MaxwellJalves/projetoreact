@@ -1,9 +1,10 @@
-import { Flexbox } from './components/Flexbox/flexbox';
+
+import {Gridcss} from './components/Gridcss/Gridcss'
 
 
 function App() {
   return (
-   <Flexbox/>
+   <Gridcss/>
   );
 }
 

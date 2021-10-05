@@ -10,14 +10,15 @@ export const Container = styled.div`
   }
   width: 100vw;
   height: 100vh;
-
+flex-direction: row-reverse;
   font-family: monospace;
   //start
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  
+ 
   /**  A propriedade flex-direction  é utilizada para definir a direção do container , uma usabilidade é que o nosso layour por default vem como column, porém ao habilitar o flex 
   todo o comportamento foi modificado para mesma linha, sendo assim para manter o posionamento inicial precisamos passar o valor de colum para a propriedade flex-direction e também podemos
   reverter a ordem dos elementos utilizando o 
@@ -88,7 +89,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-around;
    
-
+    
     height: 150px;
     width: 90%;
     font-size: 40px;
