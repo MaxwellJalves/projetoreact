@@ -10,11 +10,12 @@ export function Gridcss() {
         <section>2</section>
       </div>
       <div>
-        <section>1</section>
+        <section>3</section>
       </div>
       <div>
-        <section>2</section>
+        <section>4</section>
       </div>
     </Grid>
   );
 }
+
