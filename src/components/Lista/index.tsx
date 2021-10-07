@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Card from "../Card";
-import { Containner } from "../Card/style";
+import { ContainnerLista } from "./style";
 
 interface ICard {
   id: string | number;
@@ -21,20 +21,18 @@ const Lista: React.FC = () => {
   }, []);
 
   return (
-    <Containner>
+    <ContainnerLista>
       {lista.map((item) => {
         return (
-
-            <Card
-              key={item.id}
-              id={item.id}
-              descricao={item.descricao}
-              url={item.url}
-            />
-
+          <Card
+            key={item.id}
+            id={item.id}
+            descricao={item.descricao}
+            url={item.url}
+          />
         );
       })}
-    </Containner>
+    </ContainnerLista>
   );
 };
 

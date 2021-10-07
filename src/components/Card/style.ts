@@ -1,38 +1,46 @@
 import styled from "styled-components";
 
-const texto = "orange";
-const fonte = 'Verdana, Geneva, Tahoma, sans-serif'
-export const Containner = styled.div`
-  display: flex;
-  max-width: 1400px;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
+const texto = "white";
+const fonte = "Verdana, Geneva, Tahoma, sans-serif";
 
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-  color: white;
-  h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-`;
 export const ComponenteFilho = styled.div`
-display: flex;
-align-items: center;
-justify-content: space-between;
-flex-direction: column;
-width: 300px;
-height: 300px;
-font-family:${fonte} ;
-color: ${texto};
-border: 2px solid white;
-padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  font-family: ${fonte};
+  color: ${texto};
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px;
 
-`
+  overflow: hidden;
+`;
 export const Descricao = styled.h2`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  color: ${texto};
+`;
+
+export const Imagem = styled.img`
+  width: 100%;
+  height: 200px;
+
+  background: url(${(props) => props.src});
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  border-radius: 30px;
+  display: flex;
+  font-weight: normal;
+  text-overflow: ellipsis;
 `;

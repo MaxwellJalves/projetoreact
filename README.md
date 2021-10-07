@@ -13,3 +13,7 @@ deixe apenas os arquivos
 - Utilize um dos comandos abaixo
   - npm install --save styled-components || yarn add styled-components -D
   - npm i --save-dev @types/styled-components || yarn add @types/styled-components -D
+
+
+-- Tabela de cores
+https://www.homehost.com.br/blog/tutoriais/tabela-de-cores-html/
