@@ -9,7 +9,6 @@ interface ICard {
 const Card = (value: ICard) => {
   const { id, descricao, url } = value;
 
-  console.log(`Debug Card = ${id}   ${descricao}  | ${url}`);
   return (
     <ComponenteFilho>
       <p>Codigo : {id}</p>
