@@ -100,5 +100,10 @@ npm install -D eslint-plugin-react-hooks  || yarn add eslint-plugin-react-hooks 
 
 
 
+# Configuração para o VSCODE
+
+- Habilitando scripts para executar o yarn  no vscode
+- Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
 
 
