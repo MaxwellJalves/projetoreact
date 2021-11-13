@@ -1,8 +1,8 @@
-import WebDevelopment from "./components/web/WebDevelopment";
+import React from 'react'
+import Home from './components/home/Home'
 
-const  App = () =>{
- return( <>
- <WebDevelopment titulo="Projeto React"/>
- </>)
+
+const  App : React.FC = () =>{
+ return <Home informacao =" Ola Mundo" />
 }
 export default App

@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "exemplo/ExemplosIniciais/styles", "exemplo/ExemplosIniciais/routers", "exemplo/ExemplosIniciais/Card"  ]
 }
