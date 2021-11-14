@@ -30,6 +30,7 @@ const Home: React.FC<TypeHome> = (props: TypeHome) => {
             nome={nome}
             bandeira={bandeira}
             dataVencimento={dataVencimento}
+            visibilidade={true}
           />
         </ContainerInformacao>
       </ContainerMessage>
