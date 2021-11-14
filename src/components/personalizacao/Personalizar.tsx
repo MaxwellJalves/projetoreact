@@ -10,7 +10,8 @@ interface ICaracteristicas {
 
 const mascara = {
   visivel: '0000 0000 0000 0000',
-  bloqueado: '**** **** **** ****'
+  bloqueado: '**** **** **** ****',
+  visa: "https://vaidevisa.visa.com.br/vdv/assets/images/visa-logo-footer.png"
 }
 
 const anoVencimento = () => {
@@ -22,20 +23,20 @@ const anoVencimento = () => {
 }
 const Personalizar: React.FC<ICaracteristicas> = (props: ICaracteristicas) => {
   const { nome, dataVencimento, bandeira, visibilidade } = props;
-
+  const {visa,visivel,bloqueado} = mascara
 
 
   return (
     <div>
 
       <ContainerCentral>
-        <span>{visibilidade != true ? mascara.bloqueado : mascara.visivel}</span>
+        <span>{visibilidade != true ? bloqueado : visivel}</span>
       </ContainerCentral>
       <ContainerCentral>
 
         <p>{dataVencimento} / {anoVencimento()}</p>
         <p>{dataVencimento} / {anoVencimento()}</p>
-        <img src={Bandeira} title={bandeira} />
+        <img src={bandeira === "master" ? Bandeira : visa.toString()} title={bandeira} />
       </ContainerCentral>
       <Descricao>{nome}</Descricao>
     </div>

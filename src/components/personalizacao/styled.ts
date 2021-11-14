@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 const AlinhamentoDoTextoPadrao = styled.p`
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family:  Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   font-weight: 700;
 `;
 export const Descricao = styled(AlinhamentoDoTextoPadrao)`
-  color: orange;
+padding-left:40px;
+margin-bottom:24px;
 `;
 
 export const ContainerCentral = styled.div`
@@ -19,7 +20,7 @@ export const ContainerCentral = styled.div`
   width: 400px;
   height: 14px;
   border-radius: 6px;
-  border: 1px solid blue;
+
   justify-content: space-around;
 
   align-items: center;

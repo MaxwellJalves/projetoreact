@@ -27,10 +27,10 @@ export const ContainerMessage = styled(Centralizar)`
 
 export const Logo = styled.h2`
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   font-family: Tahoma;
-  color: orange;
+
 `;
 
 export const ContainerInformacao = styled.div`
@@ -41,3 +41,13 @@ export const ContainerInformacao = styled.div`
   font-weight: 500;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 `;
+
+export const Botao = styled.button`
+border: 0px;
+width:30px;
+border-radius: 6px;
+height:24px;
+align-self: flex-end;
+margin-right: 24px;
+background: rgba(255,255,255,0.8);
+`
