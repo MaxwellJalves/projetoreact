@@ -18,6 +18,13 @@ deixe apenas os arquivos
 -- Tabela de cores
 https://www.homehost.com.br/blog/tutoriais/tabela-de-cores-html/
 
+- Logo Marca 
+- https://brand.mastercard.com/brandcenter-br/downloads.html   
+- [x] Objetivo criar template do cartão master
+- [x] Status
+   -  ![TemplateCartao](https://user-images.githubusercontent.com/65586669/141667328-b7c0bacf-fdfe-479a-a7a2-3a5bf647eae2.gif)
+
+
 -- Atualização
 
 - yarn eslint --init
