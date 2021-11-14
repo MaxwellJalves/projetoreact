@@ -1,15 +1,38 @@
 import React from "react";
-import { Container, ContainerMessage } from "./styled";
+import Personalizar from "../personalizacao/Personalizar";
+import {
+  Container,
+  ContainerInformacao,
+  ContainerMessage,
+  Logo,
+} from "./styled";
 
 type TypeHome = {
   informacao: string;
 };
+
+const cartao = {
+  nome: "Maxwell Teste Dev",
+  bandeira: "Master",
+  dataVencimento: 12,
+};
+
 const Home: React.FC<TypeHome> = (props: TypeHome) => {
   const { informacao } = props;
+  const { nome, bandeira, dataVencimento } = cartao;
 
   return (
     <Container>
-      <ContainerMessage>{informacao}</ContainerMessage>
+      <ContainerMessage>
+        <Logo>{informacao}</Logo>
+        <ContainerInformacao>
+          <Personalizar
+            nome={nome}
+            bandeira={bandeira}
+            dataVencimento={dataVencimento}
+          />
+        </ContainerInformacao>
+      </ContainerMessage>
     </Container>
   );
 };
